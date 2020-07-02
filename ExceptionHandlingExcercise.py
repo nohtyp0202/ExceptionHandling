@@ -12,3 +12,15 @@ except:
 finally:
     print "This sentece will defenitely be printed"
 
+
+try:
+    #print x
+    print 2/0
+except NameError: # This except block will be executed only when there is NameError type of error
+    print "This is undefined variable"
+except: # As no type of error is specified here for all the other type of error this block is executed
+    print "Someother kind of error"
+finally: # Irrespective of any error this block is executed
+    print "finally print this anyway..."
+
+
