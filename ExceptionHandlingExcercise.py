@@ -24,3 +24,15 @@ finally: # Irrespective of any error this block is executed
     print "finally print this anyway..."
 
 
+
+try: # put code that needs to executed and could have some error that needs to be caught so that
+    # program doesnt stop executing
+    print x
+except: # If there is an error then the code within the except block is executed
+    print "Print this if something went wrong"
+else: # if there is no error in the try block and code runs smoothly then after that block is executed
+    #code with in the else block is executed
+    print "Print this if nothing went wrong"
+finally: # Irrespective of weather there is an error or not the code block within finally is executed.
+    print "Print this no matter what.."
+
